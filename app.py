@@ -50,3 +50,46 @@ if st.button("Show all chunks"):
     rows = c.fetchall()
     for row in rows:
         st.write(f"**{row[1]}** (ID: {row[0]}): {row[2]}")
+
+
+footer = """
+<style>
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #f0f2f6;
+    color: #262730;
+    text-align: center;
+    padding: 10px 0 5px 0;
+    font-size: 1.1rem;
+    z-index: 100;
+}
+.footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: inherit;
+}
+.footer img {
+    vertical-align: middle;
+    height: 28px;
+    width: 28px;
+    margin-bottom: 2px;
+}
+</style>
+<div class="footer">
+    <a href="https://www.linkedin.com/in/jai-chaudhary-54bb86221/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+    </a>
+    <a href="https://github.com/jcb03?tab=repositories" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+    </a>
+    <a href="https://learn.microsoft.com/en-us/users/jaichaudhary-6371/" target="_blank">
+        <img src="https://learn.microsoft.com/favicon.ico" alt="Microsoft Learn" />
+    </a>
+    <span style="margin-left: 20px; font-weight: bold;">Jai Chaudhary</span>
+</div>
+"""
+
+st.markdown(footer, unsafe_allow_html=True)

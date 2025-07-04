@@ -6,6 +6,7 @@ def init_db():
     c.execute('''CREATE TABLE IF NOT EXISTS docs
                  (id INTEGER PRIMARY KEY, title TEXT, chunk TEXT)''')
     conn.commit()
+    return conn
 
 def insert_chunk(conn, title, chunk):
     c=conn.cursor()
