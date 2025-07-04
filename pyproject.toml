@@ -1,0 +1,18 @@
+[project]
+name = "basic-vectordb-langchain-rag-api-app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb>=1.0.15",
+    "langchain>=0.3.26",
+    "langchain-chroma>=0.2.4",
+    "langchain-community>=0.3.27",
+    "langchain-openai>=0.3.27",
+    "openai>=1.93.0",
+    "pypdf>=5.7.0",
+    "python-dotenv>=1.1.1",
+    "streamlit>=1.46.1",
+    "tiktoken>=0.9.0",
+]
